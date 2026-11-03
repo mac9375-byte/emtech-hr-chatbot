@@ -1,0 +1,37 @@
+test_article_before_document_is_invalid_even_with_valid_citation (tests.test_generate.CitationTest.test_article_before_document_is_invalid_even_with_valid_citation) ... ok
+test_cited_ids_multiple_docs_and_paragraph_suffix (tests.test_generate.CitationTest.test_cited_ids_multiple_docs_and_paragraph_suffix) ... ok
+test_document_name_does_not_carry_between_citations (tests.test_generate.CitationTest.test_document_name_does_not_carry_between_citations) ... ok
+test_each_named_document_requires_an_article (tests.test_generate.CitationTest.test_each_named_document_requires_an_article) ... ok
+test_form_citation_and_fullwidth_parens (tests.test_generate.CitationTest.test_form_citation_and_fullwidth_parens) ... ok
+test_malformed_citation_mixed_with_valid_citation_is_flagged (tests.test_generate.CitationTest.test_malformed_citation_mixed_with_valid_citation_is_flagged) ... ok
+test_malformed_numbered_citation_across_newline_is_invalid (tests.test_generate.CitationTest.test_malformed_numbered_citation_across_newline_is_invalid) ... ok
+test_no_citation (tests.test_generate.CitationTest.test_no_citation) ... ok
+test_paragraph_requires_preceding_article (tests.test_generate.CitationTest.test_paragraph_requires_preceding_article) ... ok
+test_wrong_document_name_is_flagged (tests.test_generate.CitationTest.test_wrong_document_name_is_flagged)
+실제 사례(Q14): 근거는 취업규칙 제8조인데 모델이 '복무규정 제8조'라고 씀. ... ok
+test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) ... ok
+test_explicit_missing_policy_synonym_is_canonical_refusal (tests.test_generate.FinalizeTest.test_explicit_missing_policy_synonym_is_canonical_refusal) ... ok
+test_faq_is_not_shown_as_source (tests.test_generate.FinalizeTest.test_faq_is_not_shown_as_source) ... ok
+test_invalid_or_empty_citation_answer_is_refused (tests.test_generate.FinalizeTest.test_invalid_or_empty_citation_answer_is_refused) ... ok
+test_negative_policy_statement_remains_supported_answer (tests.test_generate.FinalizeTest.test_negative_policy_statement_remains_supported_answer) ... ok
+test_no_citation_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_no_citation_is_refused_without_invented_source) ... ok
+test_numbered_citation_selects_exact_context (tests.test_generate.FinalizeTest.test_numbered_citation_selects_exact_context) ... ok
+test_refusal_discards_unsupported_following_claim (tests.test_generate.FinalizeTest.test_refusal_discards_unsupported_following_claim) ... ok
+test_refusal_has_no_sources_even_with_stray_citation (tests.test_generate.FinalizeTest.test_refusal_has_no_sources_even_with_stray_citation) ... ok
+test_supported_negative_policy_with_no_extra_allowance_is_preserved (tests.test_generate.FinalizeTest.test_supported_negative_policy_with_no_extra_allowance_is_preserved) ... ok
+test_valid_citation_selects_that_source_and_is_stripped (tests.test_generate.FinalizeTest.test_valid_citation_selects_that_source_and_is_stripped) ... ok
+test_wrong_document_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_wrong_document_is_refused_without_invented_source)
+실제 사례(Q14): 잘못된 문서 인용은 출처를 보정하지 않고 거부한다. ... ok
+test_informational_dismissal_question_not_legal (tests.test_generate.RouteRulesTest.test_informational_dismissal_question_not_legal) ... ok
+test_legal_judgement (tests.test_generate.RouteRulesTest.test_legal_judgement) ... ok
+test_personal_data_questions (tests.test_generate.RouteRulesTest.test_personal_data_questions) ... ok
+test_personal_salary_amount_and_named_balance_skip_search (tests.test_generate.RouteRulesTest.test_personal_salary_amount_and_named_balance_skip_search) ... ok
+test_policy_questions_with_first_person_not_personal (tests.test_generate.RouteRulesTest.test_policy_questions_with_first_person_not_personal) ... ok
+test_salary_policy_amount_is_not_personal_lookup (tests.test_generate.RouteRulesTest.test_salary_policy_amount_is_not_personal_lookup) ... ok
+test_multiple_docs_and_articles (tests.test_generate.FaqRefsTest.test_multiple_docs_and_articles) ... ok
+test_no_ref (tests.test_generate.FaqRefsTest.test_no_ref) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.053s
+
+OK

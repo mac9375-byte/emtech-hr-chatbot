@@ -1,0 +1,33 @@
+test_cited_ids_multiple_docs_and_paragraph_suffix (tests.test_generate.CitationTest.test_cited_ids_multiple_docs_and_paragraph_suffix) ... ok
+test_form_citation_and_fullwidth_parens (tests.test_generate.CitationTest.test_form_citation_and_fullwidth_parens) ... ok
+test_no_citation (tests.test_generate.CitationTest.test_no_citation) ... ok
+test_wrong_document_name_is_flagged (tests.test_generate.CitationTest.test_wrong_document_name_is_flagged)
+���� ���(Q14): �ٰŴ� �����Ģ ��8���ε� ���� '�������� ��8��'��� ��. ... ok
+test_colloquial_illness_context_finds_paid_sick_leave (tests.test_generate.ContextTest.test_colloquial_illness_context_finds_paid_sick_leave) ... ok
+test_faq_hit_pulls_in_cited_regulation (tests.test_generate.ContextTest.test_faq_hit_pulls_in_cited_regulation) ... ok
+test_regulations_come_before_faq (tests.test_generate.ContextTest.test_regulations_come_before_faq) ... ok
+test_top_faq_reference_precedes_lower_ranked_regulations (tests.test_generate.ContextTest.test_top_faq_reference_precedes_lower_ranked_regulations) ... ok
+test_multiple_docs_and_articles (tests.test_generate.FaqRefsTest.test_multiple_docs_and_articles) ... ok
+test_no_ref (tests.test_generate.FaqRefsTest.test_no_ref) ... ok
+test_faq_is_not_shown_as_source (tests.test_generate.FinalizeTest.test_faq_is_not_shown_as_source) ... ok
+test_no_citation_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_no_citation_is_refused_without_invented_source) ... ok
+test_numbered_citation_selects_exact_context (tests.test_generate.FinalizeTest.test_numbered_citation_selects_exact_context) ... ok
+test_refusal_has_no_sources_even_with_stray_citation (tests.test_generate.FinalizeTest.test_refusal_has_no_sources_even_with_stray_citation) ... ok
+test_valid_citation_selects_that_source_and_is_stripped (tests.test_generate.FinalizeTest.test_valid_citation_selects_that_source_and_is_stripped) ... ok
+test_wrong_document_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_wrong_document_is_refused_without_invented_source)
+���� ���(Q14): ���� '�������� ��8��'�� �߸� �� -> �˻� 1���� ���� �������� ����. ... ok
+test_informational_dismissal_question_not_legal (tests.test_generate.RouteRulesTest.test_informational_dismissal_question_not_legal) ... ok
+test_legal_judgement (tests.test_generate.RouteRulesTest.test_legal_judgement) ... ok
+test_personal_data_questions (tests.test_generate.RouteRulesTest.test_personal_data_questions) ... ok
+test_policy_questions_with_first_person_not_personal (tests.test_generate.RouteRulesTest.test_policy_questions_with_first_person_not_personal) ... ok
+test_exact_term_found_by_bm25_side (tests.test_retrieve.SearchTest.test_exact_term_found_by_bm25_side)
+���� �ܵ��� '�ø���'�� 6���� ���ƴ�. ���̺긮��� ���� 3�� ���̾�� �Ѵ�. ... ok
+test_natural_question_finds_article (tests.test_retrieve.SearchTest.test_natural_question_finds_article) ... ok
+test_result_shape (tests.test_retrieve.SearchTest.test_result_shape) ... ok
+test_particle_variants_share_bigrams (tests.test_retrieve.TokensTest.test_particle_variants_share_bigrams) ... ok
+test_short_and_mixed_words (tests.test_retrieve.TokensTest.test_short_and_mixed_words) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 13.221s
+
+OK

@@ -1,0 +1,8 @@
+ollama==0.6.2
+numpy==2.5.3
+rank_bm25==0.2.2
+pymupdf==1.28.2
+python-docx==1.2.0
+reportlab==5.0.1
+streamlit==1.64.0
+httpx==0.28.1

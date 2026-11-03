@@ -1,0 +1,100 @@
+test_empty_index_has_friendly_startup_message (test_app.AppTestCase.test_empty_index_has_friendly_startup_message) ... 2026-09-29 11:23:04.031 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_missing_index_has_friendly_startup_message (test_app.AppTestCase.test_missing_index_has_friendly_startup_message) ... 2026-09-29 11:23:14.283 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_prepare_connection_failure_has_friendly_message (test_app.AppTestCase.test_prepare_connection_failure_has_friendly_message) ... 2026-09-29 11:23:14.950 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_refusal_skips_generation_and_reset_clears_history (test_app.AppTestCase.test_refusal_skips_generation_and_reset_clears_history) ... 2026-09-29 11:23:15.641 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_startup_and_streaming_sources_feedback_without_content_logging (test_app.AppTestCase.test_startup_and_streaming_sources_feedback_without_content_logging) ... 2026-09-29 11:23:16.584 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_stream_failure_does_not_save_partial_answer_or_sources (test_app.AppTestCase.test_stream_failure_does_not_save_partial_answer_or_sources) ... 2026-09-29 11:23:18.267 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_form_fields_are_not_attachment_documents (test_evaluation.EvaluationTest.test_form_fields_are_not_attachment_documents) ... ok
+test_cited_ids_multiple_docs_and_paragraph_suffix (test_generate.CitationTest.test_cited_ids_multiple_docs_and_paragraph_suffix) ... ok
+test_form_citation_and_fullwidth_parens (test_generate.CitationTest.test_form_citation_and_fullwidth_parens) ... ok
+test_no_citation (test_generate.CitationTest.test_no_citation) ... ok
+test_wrong_document_name_is_flagged (test_generate.CitationTest.test_wrong_document_name_is_flagged)
+실제 사례(Q14): 근거는 취업규칙 제8조인데 모델이 '복무규정 제8조'라고 씀. ... ok
+test_colloquial_illness_context_finds_paid_sick_leave (test_generate.ContextTest.test_colloquial_illness_context_finds_paid_sick_leave) ... ok
+test_faq_hit_pulls_in_cited_regulation (test_generate.ContextTest.test_faq_hit_pulls_in_cited_regulation) ... ok
+test_regulations_come_before_faq (test_generate.ContextTest.test_regulations_come_before_faq) ... ok
+test_top_faq_reference_precedes_lower_ranked_regulations (test_generate.ContextTest.test_top_faq_reference_precedes_lower_ranked_regulations) ... ok
+test_multiple_docs_and_articles (test_generate.FaqRefsTest.test_multiple_docs_and_articles) ... ok
+test_no_ref (test_generate.FaqRefsTest.test_no_ref) ... ok
+test_faq_is_not_shown_as_source (test_generate.FinalizeTest.test_faq_is_not_shown_as_source) ... ok
+test_invalid_or_empty_citation_answer_is_refused (test_generate.FinalizeTest.test_invalid_or_empty_citation_answer_is_refused) ... ok
+test_no_citation_is_refused_without_invented_source (test_generate.FinalizeTest.test_no_citation_is_refused_without_invented_source) ... ok
+test_numbered_citation_selects_exact_context (test_generate.FinalizeTest.test_numbered_citation_selects_exact_context) ... ok
+test_refusal_has_no_sources_even_with_stray_citation (test_generate.FinalizeTest.test_refusal_has_no_sources_even_with_stray_citation) ... ok
+test_valid_citation_selects_that_source_and_is_stripped (test_generate.FinalizeTest.test_valid_citation_selects_that_source_and_is_stripped) ... ok
+test_wrong_document_is_refused_without_invented_source (test_generate.FinalizeTest.test_wrong_document_is_refused_without_invented_source)
+실제 사례(Q14): 모델이 '복무규정 제8조'로 잘못 씀 -> 검색 1순위 규정 조항으로 교정. ... ok
+test_informational_dismissal_question_not_legal (test_generate.RouteRulesTest.test_informational_dismissal_question_not_legal) ... ok
+test_legal_judgement (test_generate.RouteRulesTest.test_legal_judgement) ... ok
+test_personal_data_questions (test_generate.RouteRulesTest.test_personal_data_questions) ... ok
+test_policy_questions_with_first_person_not_personal (test_generate.RouteRulesTest.test_policy_questions_with_first_person_not_personal) ... ok
+test_chunks_match_source (test_ingest.IngestTest.test_chunks_match_source) ... ok
+test_history_chunks_flagged (test_ingest.IngestTest.test_history_chunks_flagged) ... ok
+test_table_rows_kept_together (test_ingest.IngestTest.test_table_rows_kept_together)
+경조휴가 표가 다음 쪽에 걸려도 행 단위로 복원돼야 한다. ... ok
+test_environment_cannot_redirect_local_ollama_client (test_local_client.LocalClientTest.test_environment_cannot_redirect_local_ollama_client) ... ok
+test_exact_term_found_by_bm25_side (test_retrieve.SearchTest.test_exact_term_found_by_bm25_side)
+벡터 단독은 '시말서'를 6위로 놓쳤다. 하이브리드는 상위 3위 안이어야 한다. ... ok
+test_natural_question_finds_article (test_retrieve.SearchTest.test_natural_question_finds_article) ... ok
+test_result_shape (test_retrieve.SearchTest.test_result_shape) ... ok
+test_empty_index_is_reported_before_bm25 (test_retrieve.TokensTest.test_empty_index_is_reported_before_bm25) ... ok
+test_particle_variants_share_bigrams (test_retrieve.TokensTest.test_particle_variants_share_bigrams) ... ok
+test_short_and_mixed_words (test_retrieve.TokensTest.test_short_and_mixed_words) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 32.245s
+
+OK
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+ok   Q01 
+ok   Q02 
+ok   Q03 
+ok   Q04 
+ok   Q05 
+ok   Q06 
+ok   Q07 
+ok   Q08 
+ok   Q09 
+ok   Q10 
+ok   Q11 
+ok   Q12 
+ok   Q13 
+ok   Q14 
+ok   Q15 
+ok   Q16 
+ok   Q17 
+ok   Q18 
+ok   Q19 
+ok   Q20 
+ok   F01 
+ok   F02 
+ok   F03 
+ok   N01 
+ok   N02 
+ok   N03 
+ok   O01 
+ok   O02 
+ok   L01 
+ok   L02 
+ok   Q21 
+ok   Q22 
+ok   Q23 
+ok   Q24 
+ok   Q25 
+ok   Q26 
+ok   Q27 
+ok   Q28 
+ok   F04 
+ok   F05 
+ok   N04 
+ok   N05 
+ok   O03 
+
+문서 5개, 조항/문항 157개, 질문 43개, 실패 0개
+No broken requirements found.

@@ -1,0 +1,112 @@
+test_article_before_document_is_invalid_even_with_valid_citation (tests.test_generate.CitationTest.test_article_before_document_is_invalid_even_with_valid_citation) ... ok
+test_cited_ids_multiple_docs_and_paragraph_suffix (tests.test_generate.CitationTest.test_cited_ids_multiple_docs_and_paragraph_suffix) ... ok
+test_document_name_does_not_carry_between_citations (tests.test_generate.CitationTest.test_document_name_does_not_carry_between_citations) ... ok
+test_each_named_document_requires_an_article (tests.test_generate.CitationTest.test_each_named_document_requires_an_article) ... 
+  test_each_named_document_requires_an_article (tests.test_generate.CitationTest.test_each_named_document_requires_an_article) (citation='취업규칙 제8조, 복무규정') ... FAIL
+  test_each_named_document_requires_an_article (tests.test_generate.CitationTest.test_each_named_document_requires_an_article) (citation='취업규칙 제8조, 복무규정 제999항') ... FAIL
+test_form_citation_and_fullwidth_parens (tests.test_generate.CitationTest.test_form_citation_and_fullwidth_parens) ... ok
+test_malformed_citation_mixed_with_valid_citation_is_flagged (tests.test_generate.CitationTest.test_malformed_citation_mixed_with_valid_citation_is_flagged) ... ok
+test_malformed_numbered_citation_across_newline_is_invalid (tests.test_generate.CitationTest.test_malformed_numbered_citation_across_newline_is_invalid) ... ok
+test_no_citation (tests.test_generate.CitationTest.test_no_citation) ... ok
+test_paragraph_requires_preceding_article (tests.test_generate.CitationTest.test_paragraph_requires_preceding_article) ... FAIL
+test_wrong_document_name_is_flagged (tests.test_generate.CitationTest.test_wrong_document_name_is_flagged)
+실제 사례(Q14): 근거는 취업규칙 제8조인데 모델이 '복무규정 제8조'라고 씀. ... ok
+test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) ... 
+  test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) (prefix='규정에 없습니다.') ... FAIL
+  test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) (prefix='문서에 해당 내용이 없습니다.') ... FAIL
+  test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) (prefix='근거가 없습니다.') ... FAIL
+test_explicit_missing_policy_synonym_is_canonical_refusal (tests.test_generate.FinalizeTest.test_explicit_missing_policy_synonym_is_canonical_refusal) ... ok
+test_faq_is_not_shown_as_source (tests.test_generate.FinalizeTest.test_faq_is_not_shown_as_source) ... ok
+test_invalid_or_empty_citation_answer_is_refused (tests.test_generate.FinalizeTest.test_invalid_or_empty_citation_answer_is_refused) ... ok
+test_negative_policy_statement_remains_supported_answer (tests.test_generate.FinalizeTest.test_negative_policy_statement_remains_supported_answer) ... ok
+test_no_citation_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_no_citation_is_refused_without_invented_source) ... ok
+test_numbered_citation_selects_exact_context (tests.test_generate.FinalizeTest.test_numbered_citation_selects_exact_context) ... ok
+test_refusal_discards_unsupported_following_claim (tests.test_generate.FinalizeTest.test_refusal_discards_unsupported_following_claim) ... ok
+test_refusal_has_no_sources_even_with_stray_citation (tests.test_generate.FinalizeTest.test_refusal_has_no_sources_even_with_stray_citation) ... ok
+test_supported_negative_policy_with_no_extra_allowance_is_preserved (tests.test_generate.FinalizeTest.test_supported_negative_policy_with_no_extra_allowance_is_preserved) ... ok
+test_valid_citation_selects_that_source_and_is_stripped (tests.test_generate.FinalizeTest.test_valid_citation_selects_that_source_and_is_stripped) ... ok
+test_wrong_document_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_wrong_document_is_refused_without_invented_source)
+실제 사례(Q14): 잘못된 문서 인용은 출처를 보정하지 않고 거부한다. ... ok
+
+======================================================================
+FAIL: test_each_named_document_requires_an_article (tests.test_generate.CitationTest.test_each_named_document_requires_an_article) (citation='취업규칙 제8조, 복무규정')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 52, in test_each_named_document_requires_an_article
+    self.assertTrue(bad_citations(f"답. (근거: {citation})", chunks))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_each_named_document_requires_an_article (tests.test_generate.CitationTest.test_each_named_document_requires_an_article) (citation='취업규칙 제8조, 복무규정 제999항')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 52, in test_each_named_document_requires_an_article
+    self.assertTrue(bad_citations(f"답. (근거: {citation})", chunks))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_paragraph_requires_preceding_article (tests.test_generate.CitationTest.test_paragraph_requires_preceding_article)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 56, in test_paragraph_requires_preceding_article
+    self.assertTrue(bad_citations("답. (근거: 제999항, 취업규칙 제8조)", chunks))
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [] is not true
+
+======================================================================
+FAIL: test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) (prefix='규정에 없습니다.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 98, in test_absent_policy_refusal_discards_following_claim
+    self.assertEqual(finalize(self.prep(), prefix + " 하지만 매월 100만원을 지급합니다. [근거1]"), (REFUSE, []))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: ('규정에 없습니다. 하지만 매월 100만원을 지급합니다.', [{'id': '취업[47 chars]문'}]) != ('규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정[29 chars], [])
+
+First differing element 0:
+'규정에 없습니다. 하지만 매월 100만원을 지급합니다.'
+'규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정에 없는 내용일 수 있으니 HR팀에 문의해 주세요.'
+
++ ('규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정에 없는 내용일 수 있으니 HR팀에 문의해 주세요.', [])
+- ('규정에 없습니다. 하지만 매월 100만원을 지급합니다.',
+-  [{'id': '취업규칙:제8조', 'label': '취업규칙 제8조 (수습기간)', 'text': '본문'}])
+
+======================================================================
+FAIL: test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) (prefix='문서에 해당 내용이 없습니다.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 98, in test_absent_policy_refusal_discards_following_claim
+    self.assertEqual(finalize(self.prep(), prefix + " 하지만 매월 100만원을 지급합니다. [근거1]"), (REFUSE, []))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: ('문서에 해당 내용이 없습니다. 하지만 매월 100만원을 지급합니다.', [[57 chars]문'}]) != ('규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나[32 chars], [])
+
+First differing element 0:
+'문서에 해당 내용이 없습니다. 하지만 매월 100만원을 지급합니다.'
+'규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정에 없는 내용일 수 있으니 HR팀에 문의해 주세요.'
+
++ ('규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정에 없는 내용일 수 있으니 HR팀에 문의해 주세요.', [])
+- ('문서에 해당 내용이 없습니다. 하지만 매월 100만원을 지급합니다.',
+-  [{'id': '취업규칙:제8조', 'label': '취업규칙 제8조 (수습기간)', 'text': '본문'}])
+
+======================================================================
+FAIL: test_absent_policy_refusal_discards_following_claim (tests.test_generate.FinalizeTest.test_absent_policy_refusal_discards_following_claim) (prefix='근거가 없습니다.')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 98, in test_absent_policy_refusal_discards_following_claim
+    self.assertEqual(finalize(self.prep(), prefix + " 하지만 매월 100만원을 지급합니다. [근거1]"), (REFUSE, []))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Tuples differ: ('근거가 없습니다. 하지만 매월 100만원을 지급합니다.', [{'id': [50 chars]문'}]) != ('규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나[32 chars], [])
+
+First differing element 0:
+'근거가 없습니다. 하지만 매월 100만원을 지급합니다.'
+'규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정에 없는 내용일 수 있으니 HR팀에 문의해 주세요.'
+
++ ('규정에서 해당 내용을 찾을 수 없습니다. 인사 규정과 관련 없는 질문이거나 규정에 없는 내용일 수 있으니 HR팀에 문의해 주세요.', [])
+- ('근거가 없습니다. 하지만 매월 100만원을 지급합니다.',
+-  [{'id': '취업규칙:제8조', 'label': '취업규칙 제8조 (수습기간)', 'text': '본문'}])
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.053s
+
+FAILED (failures=6)

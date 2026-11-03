@@ -1,0 +1,187 @@
+test_log_has_question_and_answer_but_no_user_identifiers (test_app.AppTests.test_log_has_question_and_answer_but_no_user_identifiers) ... 2026-09-29 11:02:04.561 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
++--------------------- Traceback (most recent call last) ----------------------+
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py: |
+| 136 in exec_func_with_error_handling                                         |
+|                                                                              |
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner |
+| .py:909 in code_to_exec                                                      |
+|                                                                              |
+| C:\0. project\hr chatbot\app.py:10 in <module>                               |
+|                                                                              |
+|     7                                                                        |
+|     8 import streamlit as st                                                 |
+|     9                                                                        |
+| >  10 from src.config import FALLBACK_DISTANCE, GEN_MODEL, LOG_PATH          |
+|    11 from src.generate import finalize, generate, prepare, warm_up          |
+|    12 from src.retrieve import _index                                        |
+|    13                                                                        |
++------------------------------------------------------------------------------+
+ImportError: cannot import name 'FALLBACK_DISTANCE' from 'src.config' (C:\0. 
+project\hr chatbot\src\config.py)
+ERROR
+test_out_of_scope_question_is_refused (test_app.AppTests.test_out_of_scope_question_is_refused) ... 2026-09-29 11:02:05.459 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
++--------------------- Traceback (most recent call last) ----------------------+
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py: |
+| 136 in exec_func_with_error_handling                                         |
+|                                                                              |
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner |
+| .py:909 in code_to_exec                                                      |
+|                                                                              |
+| C:\0. project\hr chatbot\app.py:10 in <module>                               |
+|                                                                              |
+|     7                                                                        |
+|     8 import streamlit as st                                                 |
+|     9                                                                        |
+| >  10 from src.config import FALLBACK_DISTANCE, GEN_MODEL, LOG_PATH          |
+|    11 from src.generate import finalize, generate, prepare, warm_up          |
+|    12 from src.retrieve import _index                                        |
+|    13                                                                        |
++------------------------------------------------------------------------------+
+ImportError: cannot import name 'FALLBACK_DISTANCE' from 'src.config' (C:\0. 
+project\hr chatbot\src\config.py)
+ERROR
+test_personal_question_is_referred_to_hr_without_llm (test_app.AppTests.test_personal_question_is_referred_to_hr_without_llm) ... 2026-09-29 11:02:05.737 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
++--------------------- Traceback (most recent call last) ----------------------+
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py: |
+| 136 in exec_func_with_error_handling                                         |
+|                                                                              |
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner |
+| .py:909 in code_to_exec                                                      |
+|                                                                              |
+| C:\0. project\hr chatbot\app.py:10 in <module>                               |
+|                                                                              |
+|     7                                                                        |
+|     8 import streamlit as st                                                 |
+|     9                                                                        |
+| >  10 from src.config import FALLBACK_DISTANCE, GEN_MODEL, LOG_PATH          |
+|    11 from src.generate import finalize, generate, prepare, warm_up          |
+|    12 from src.retrieve import _index                                        |
+|    13                                                                        |
++------------------------------------------------------------------------------+
+ImportError: cannot import name 'FALLBACK_DISTANCE' from 'src.config' (C:\0. 
+project\hr chatbot\src\config.py)
+ERROR
+test_reset_button_clears_conversation (test_app.AppTests.test_reset_button_clears_conversation) ... 2026-09-29 11:02:06.045 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
++--------------------- Traceback (most recent call last) ----------------------+
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py: |
+| 136 in exec_func_with_error_handling                                         |
+|                                                                              |
+| C:\0. project\hr                                                             |
+| chatbot\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner |
+| .py:909 in code_to_exec                                                      |
+|                                                                              |
+| C:\0. project\hr chatbot\app.py:10 in <module>                               |
+|                                                                              |
+|     7                                                                        |
+|     8 import streamlit as st                                                 |
+|     9                                                                        |
+| >  10 from src.config import FALLBACK_DISTANCE, GEN_MODEL, LOG_PATH          |
+|    11 from src.generate import finalize, generate, prepare, warm_up          |
+|    12 from src.retrieve import _index                                        |
+|    13                                                                        |
++------------------------------------------------------------------------------+
+ImportError: cannot import name 'FALLBACK_DISTANCE' from 'src.config' (C:\0. 
+project\hr chatbot\src\config.py)
+ERROR
+test_cited_ids_multiple_docs_and_paragraph_suffix (test_generate.CitationTest.test_cited_ids_multiple_docs_and_paragraph_suffix) ... ok
+test_form_citation_and_fullwidth_parens (test_generate.CitationTest.test_form_citation_and_fullwidth_parens) ... ok
+test_no_citation (test_generate.CitationTest.test_no_citation) ... ok
+test_wrong_document_name_is_flagged (test_generate.CitationTest.test_wrong_document_name_is_flagged)
+���� ���(Q14): �ٰŴ� �����Ģ ��8���ε� ���� '�������� ��8��'��� ��. ... ok
+test_faq_hit_pulls_in_cited_regulation (test_generate.ContextTest.test_faq_hit_pulls_in_cited_regulation) ... ok
+test_regulations_come_before_faq (test_generate.ContextTest.test_regulations_come_before_faq) ... ok
+test_multiple_docs_and_articles (test_generate.FaqRefsTest.test_multiple_docs_and_articles) ... ok
+test_no_ref (test_generate.FaqRefsTest.test_no_ref) ... ok
+test_faq_is_not_shown_as_source (test_generate.FinalizeTest.test_faq_is_not_shown_as_source) ... ok
+test_no_citation_falls_back_to_top_regulation (test_generate.FinalizeTest.test_no_citation_falls_back_to_top_regulation) ... ok
+test_refusal_has_no_sources_even_with_stray_citation (test_generate.FinalizeTest.test_refusal_has_no_sources_even_with_stray_citation) ... ok
+test_valid_citation_selects_that_source_and_is_stripped (test_generate.FinalizeTest.test_valid_citation_selects_that_source_and_is_stripped) ... ok
+test_wrong_document_falls_back_to_top_regulation (test_generate.FinalizeTest.test_wrong_document_falls_back_to_top_regulation)
+���� ���(Q14): ���� '�������� ��8��'�� �߸� �� -> �˻� 1���� ���� �������� ����. ... ok
+test_informational_dismissal_question_not_legal (test_generate.RouteRulesTest.test_informational_dismissal_question_not_legal) ... ok
+test_legal_judgement (test_generate.RouteRulesTest.test_legal_judgement) ... ok
+test_personal_data_questions (test_generate.RouteRulesTest.test_personal_data_questions) ... ok
+test_policy_questions_with_first_person_not_personal (test_generate.RouteRulesTest.test_policy_questions_with_first_person_not_personal) ... ok
+test_chunks_match_source (test_ingest.IngestTest.test_chunks_match_source) ... ok
+test_history_chunks_flagged (test_ingest.IngestTest.test_history_chunks_flagged) ... ok
+test_table_rows_kept_together (test_ingest.IngestTest.test_table_rows_kept_together)
+�����ް� ǥ�� ���� �ʿ� �ɷ��� �� ������ �����ž� �Ѵ�. ... ok
+test_exact_term_found_by_bm25_side (test_retrieve.SearchTest.test_exact_term_found_by_bm25_side)
+���� �ܵ��� '�ø���'�� 6���� ���ƴ�. ���̺긮��� ���� 3�� ���̾�� �Ѵ�. ... ok
+test_natural_question_finds_article (test_retrieve.SearchTest.test_natural_question_finds_article) ... ok
+test_result_shape (test_retrieve.SearchTest.test_result_shape) ... ok
+test_particle_variants_share_bigrams (test_retrieve.TokensTest.test_particle_variants_share_bigrams) ... ok
+test_short_and_mixed_words (test_retrieve.TokensTest.test_short_and_mixed_words) ... ok
+
+======================================================================
+ERROR: test_log_has_question_and_answer_but_no_user_identifiers (test_app.AppTests.test_log_has_question_and_answer_but_no_user_identifiers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 44, in test_log_has_question_and_answer_but_no_user_identifiers
+    self.ask("���� ���� ���� �?")
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 27, in ask
+    at.chat_input[0].set_value(question).run()
+    ~~~~~~~~~~~~~^^^
+  File "C:\0. project\hr chatbot\.venv\Lib\site-packages\streamlit\testing\v1\element_tree.py", line 313, in __getitem__
+    return self._list[idx]
+           ~~~~~~~~~~^^^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_out_of_scope_question_is_refused (test_app.AppTests.test_out_of_scope_question_is_refused)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 39, in test_out_of_scope_question_is_refused
+    at = self.ask("���� ���� ���� �?")
+         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 27, in ask
+    at.chat_input[0].set_value(question).run()
+    ~~~~~~~~~~~~~^^^
+  File "C:\0. project\hr chatbot\.venv\Lib\site-packages\streamlit\testing\v1\element_tree.py", line 313, in __getitem__
+    return self._list[idx]
+           ~~~~~~~~~~^^^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_personal_question_is_referred_to_hr_without_llm (test_app.AppTests.test_personal_question_is_referred_to_hr_without_llm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 34, in test_personal_question_is_referred_to_hr_without_llm
+    at = self.ask("�� ������ ��ĥ ���Ҵ��� �˷��ּ���.")
+         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 27, in ask
+    at.chat_input[0].set_value(question).run()
+    ~~~~~~~~~~~~~^^^
+  File "C:\0. project\hr chatbot\.venv\Lib\site-packages\streamlit\testing\v1\element_tree.py", line 313, in __getitem__
+    return self._list[idx]
+           ~~~~~~~~~~^^^^^
+IndexError: list index out of range
+
+======================================================================
+ERROR: test_reset_button_clears_conversation (test_app.AppTests.test_reset_button_clears_conversation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 52, in test_reset_button_clears_conversation
+    at = self.ask("���� ���� ���� �?")
+         ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\0. project\hr chatbot\tests\test_app.py", line 27, in ask
+    at.chat_input[0].set_value(question).run()
+    ~~~~~~~~~~~~~^^^
+  File "C:\0. project\hr chatbot\.venv\Lib\site-packages\streamlit\testing\v1\element_tree.py", line 313, in __getitem__
+    return self._list[idx]
+           ~~~~~~~~~~^^^^^
+IndexError: list index out of range
+
+----------------------------------------------------------------------
+Ran 29 tests in 26.736s
+
+FAILED (errors=4)
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.

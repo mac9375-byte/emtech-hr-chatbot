@@ -1,0 +1,112 @@
+test_cited_ids_multiple_docs_and_paragraph_suffix (tests.test_generate.CitationTest.test_cited_ids_multiple_docs_and_paragraph_suffix) ... ok
+test_form_citation_and_fullwidth_parens (tests.test_generate.CitationTest.test_form_citation_and_fullwidth_parens) ... ok
+test_no_citation (tests.test_generate.CitationTest.test_no_citation) ... ok
+test_wrong_document_name_is_flagged (tests.test_generate.CitationTest.test_wrong_document_name_is_flagged)
+���� ���(Q14): �ٰŴ� �����Ģ ��8���ε� ���� '�������� ��8��'��� ��. ... ok
+test_colloquial_illness_context_finds_paid_sick_leave (tests.test_generate.ContextTest.test_colloquial_illness_context_finds_paid_sick_leave) ... FAIL
+test_faq_hit_pulls_in_cited_regulation (tests.test_generate.ContextTest.test_faq_hit_pulls_in_cited_regulation) ... ok
+test_regulations_come_before_faq (tests.test_generate.ContextTest.test_regulations_come_before_faq) ... ok
+test_top_faq_reference_precedes_lower_ranked_regulations (tests.test_generate.ContextTest.test_top_faq_reference_precedes_lower_ranked_regulations) ... FAIL
+test_multiple_docs_and_articles (tests.test_generate.FaqRefsTest.test_multiple_docs_and_articles) ... ok
+test_no_ref (tests.test_generate.FaqRefsTest.test_no_ref) ... ok
+test_faq_is_not_shown_as_source (tests.test_generate.FinalizeTest.test_faq_is_not_shown_as_source) ... FAIL
+test_no_citation_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_no_citation_is_refused_without_invented_source) ... FAIL
+test_numbered_citation_selects_exact_context (tests.test_generate.FinalizeTest.test_numbered_citation_selects_exact_context) ... FAIL
+test_refusal_has_no_sources_even_with_stray_citation (tests.test_generate.FinalizeTest.test_refusal_has_no_sources_even_with_stray_citation) ... ok
+test_valid_citation_selects_that_source_and_is_stripped (tests.test_generate.FinalizeTest.test_valid_citation_selects_that_source_and_is_stripped) ... ok
+test_wrong_document_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_wrong_document_is_refused_without_invented_source)
+���� ���(Q14): ���� '�������� ��8��'�� �߸� �� -> �˻� 1���� ���� �������� ����. ... FAIL
+test_informational_dismissal_question_not_legal (tests.test_generate.RouteRulesTest.test_informational_dismissal_question_not_legal) ... ok
+test_legal_judgement (tests.test_generate.RouteRulesTest.test_legal_judgement) ... ok
+test_personal_data_questions (tests.test_generate.RouteRulesTest.test_personal_data_questions) ... ok
+test_policy_questions_with_first_person_not_personal (tests.test_generate.RouteRulesTest.test_policy_questions_with_first_person_not_personal) ... ok
+
+======================================================================
+FAIL: test_colloquial_illness_context_finds_paid_sick_leave (tests.test_generate.ContextTest.test_colloquial_illness_context_finds_paid_sick_leave)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 100, in test_colloquial_illness_context_finds_paid_sick_leave
+    self.assertIn("��������:��24��", [c["id"] for c in build_context("���ļ� ���� ���� ���Ϳ�?")])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '��������:��24��' not found in ['��������:��28��', '��������:��21��', '��������:��23��']
+
+======================================================================
+FAIL: test_top_faq_reference_precedes_lower_ranked_regulations (tests.test_generate.ContextTest.test_top_faq_reference_precedes_lower_ranked_regulations)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 97, in test_top_faq_reference_precedes_lower_ranked_regulations
+    self.assertEqual(build_context("���ļ� ���� ���� ���Ϳ�?")[0], gold)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'id': '��������:��1��'} != {'id': '��������:��24��'}
+- {'id': '��������:��1��'}
+?               ^
+
++ {'id': '��������:��24��'}
+?               ^^
+
+
+======================================================================
+FAIL: test_faq_is_not_shown_as_source (tests.test_generate.FinalizeTest.test_faq_is_not_shown_as_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 88, in test_faq_is_not_shown_as_source
+    self.assertEqual(src, [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+AssertionError: Lists differ: [{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}
+
+- [{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}]
++ []
+
+======================================================================
+FAIL: test_no_citation_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_no_citation_is_refused_without_invented_source)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 74, in test_no_citation_is_refused_without_invented_source
+    self.assertEqual(src, [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+AssertionError: Lists differ: [{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}
+
+- [{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}]
++ []
+
+======================================================================
+FAIL: test_numbered_citation_selects_exact_context (tests.test_generate.FinalizeTest.test_numbered_citation_selects_exact_context)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 78, in test_numbered_citation_selects_exact_context
+    self.assertEqual(text, "3�����Դϴ�.")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '3�����Դϴ�. [�ٰ�2]' != '3�����Դϴ�.'
+- 3�����Դϴ�. [�ٰ�2]
++ 3�����Դϴ�.
+
+
+======================================================================
+FAIL: test_wrong_document_is_refused_without_invented_source (tests.test_generate.FinalizeTest.test_wrong_document_is_refused_without_invented_source)
+���� ���(Q14): ���� '�������� ��8��'�� �߸� �� -> �˻� 1���� ���� �������� ����.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\0. project\hr chatbot\tests\test_generate.py", line 70, in test_wrong_document_is_refused_without_invented_source
+    self.assertEqual(src, [])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+AssertionError: Lists differ: [{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}
+
+- [{'id': '�����Ģ:��8��', 'label': '�����Ģ ��8�� (�����Ⱓ)', 'text': '����'}]
++ []
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.710s
+
+FAILED (failures=6)

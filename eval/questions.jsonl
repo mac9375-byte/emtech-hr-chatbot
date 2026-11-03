@@ -1,0 +1,43 @@
+{"id":"Q01","type":"in_scope","question":"입사 1년 미만 직원은 연차를 최대 며칠까지 받을 수 있나요?","gold_doc":"복무규정","gold_article":"제13조","keywords":["11일"]}
+{"id":"Q02","type":"in_scope","question":"연차를 3일 이상 붙여서 쓰려면 며칠 전에 신청해야 하나요?","gold_doc":"복무규정","gold_article":"제14조","keywords":["7일 전"]}
+{"id":"Q03","type":"in_scope","question":"반반차는 1년에 몇 번까지 쓸 수 있어요?","gold_doc":"복무규정","gold_article":"제15조","keywords":["10회"]}
+{"id":"Q04","type":"in_scope","question":"배우자가 출산하면 휴가를 며칠 주고 언제까지 써야 하나요?","gold_doc":"복무규정","gold_article":"제20조","keywords":["10일","90일 이내"]}
+{"id":"Q05","type":"in_scope","question":"육아휴직은 언제까지 신청해야 하나요?","gold_doc":"복무규정","gold_article":"제21조","keywords":["30일 전"]}
+{"id":"Q06","type":"in_scope","question":"유급 병가는 1년에 며칠까지 쓸 수 있나요?","gold_doc":"복무규정","gold_article":"제24조","keywords":["10일"]}
+{"id":"Q07","type":"in_scope","question":"리프레시 휴가는 몇 년마다 며칠을 받나요?","gold_doc":"복무규정","gold_article":"제26조","keywords":["5년마다","5일"],"note":"개정 이력에 구 기준(3년마다 3일)이 함께 있음"}
+{"id":"Q08","type":"in_scope","question":"재택근무는 일주일에 최대 며칠까지 할 수 있나요?","gold_doc":"복무규정","gold_article":"제7조","keywords":["주 2일"],"note":"개정 이력에 구 기준(주 1일)이 함께 있음"}
+{"id":"Q09","type":"in_scope","question":"국내 출장 때 서울 숙박비는 얼마까지 인정되나요?","gold_doc":"복무규정","gold_article":"제32조","keywords":["12만 원"]}
+{"id":"Q10","type":"in_scope","question":"초과근무는 일주일에 몇 시간까지 할 수 있나요?","gold_doc":"복무규정","gold_article":"제10조","keywords":["12시간"]}
+{"id":"Q11","type":"in_scope","question":"5일 이상 연속으로 휴가를 쓰려면 누구 승인이 필요해요?","gold_doc":"복무규정","gold_article":"제35조","keywords":["본부장"]}
+{"id":"Q12","type":"in_scope","question":"월급은 매달 며칠에 나오나요?","gold_doc":"취업규칙","gold_article":"제23조","keywords":["25일"]}
+{"id":"Q13","type":"in_scope","question":"휴일에 8시간을 넘겨 일하면 수당이 몇 퍼센트인가요?","gold_doc":"취업규칙","gold_article":"제25조","keywords":["200%"]}
+{"id":"Q14","type":"in_scope","question":"수습기간은 몇 개월이고 그동안 월급은 얼마나 받나요?","gold_doc":"취업규칙","gold_article":"제8조","keywords":["3개월","100%"],"note":"개정 이력에 구 기준(90%)이 함께 있음"}
+{"id":"Q15","type":"in_scope","question":"직장 내 괴롭힘을 신고하면 회사는 며칠 안에 조사를 시작하나요?","gold_doc":"취업규칙","gold_article":"제33조","keywords":["7일 이내"]}
+{"id":"Q16","type":"in_scope","question":"자기계발비는 1년에 얼마까지이고 며칠 안에 신청해야 하나요?","gold_doc":"복리후생규정","gold_article":"제5조","keywords":["100만 원","60일"],"note":"개정 이력에 구 기준(80만 원, 50만 원)이 함께 있음"}
+{"id":"Q17","type":"in_scope","question":"사내 대출은 최대 얼마까지 받을 수 있고 이자율은 몇 %인가요?","gold_doc":"복리후생규정","gold_article":"제11조","keywords":["2,000만 원","2.0%"],"note":"개정 이력에 구 이자율(2.5%)이 함께 있음"}
+{"id":"Q18","type":"in_scope","question":"계약직도 학자금 지원을 받을 수 있나요?","gold_doc":"복리후생규정","gold_article":"제1조","keywords":["계약직","학자금","제외"]}
+{"id":"Q19","type":"in_scope","question":"배우자 건강검진은 어떻게 지원되나요?","gold_doc":"복리후생규정","gold_article":"제12조","keywords":["2년에 1회","50%"]}
+{"id":"Q20","type":"in_scope","question":"육아휴직 신청서를 낼 때 어떤 서류를 첨부해야 하나요?","gold_doc":"신청양식모음","gold_article":"양식 3","gold_also":["복무규정:제21조"],"keywords":["가족관계증명서"],"forbidden_keywords":["성명", "사번", "분할 사용 여부", "복직 예정일"]}
+{"id":"F01","type":"followup","history":["입사 1년 미만 직원은 연차를 최대 며칠까지 받을 수 있나요?"],"question":"그럼 1년 이상 근속하면요?","gold_doc":"복무규정","gold_article":"제13조","keywords":["15일"]}
+{"id":"F02","type":"followup","history":["재택근무는 일주일에 최대 며칠까지 할 수 있나요?"],"question":"신청은 언제까지 해야 해?","gold_doc":"복무규정","gold_article":"제7조","keywords":["오후 5시"]}
+{"id":"F03","type":"followup","history":["육아휴직은 최대 얼마나 쓸 수 있나요?"],"question":"그 기간에 월급은 나오나요?","gold_doc":"복무규정","gold_article":"제21조","gold_also":["복무규정:제28조"],"keywords":["무급|지급되지"]}
+{"id":"N01","type":"no_evidence","question":"우리 회사에 스톡옵션 제도가 있나요?","expected":"refuse_no_evidence","absent_keywords":["스톡옵션"]}
+{"id":"N02","type":"no_evidence","question":"안식년 휴가는 며칠인가요?","expected":"refuse_no_evidence","absent_keywords":["안식년"]}
+{"id":"N03","type":"no_evidence","question":"주 4일 근무제를 시행하나요?","expected":"refuse_no_evidence","absent_keywords":["주 4일","주4일","4일제"]}
+{"id":"O01","type":"out_of_scope","question":"오늘 서울 날씨 어때?","expected":"refuse_out_of_scope"}
+{"id":"O02","type":"out_of_scope","question":"파이썬으로 피보나치 수열 함수 짜줘","expected":"refuse_out_of_scope"}
+{"id":"L01","type":"legal_personal","question":"제가 팀장님께 욕을 했는데 해고당할 수 있나요? 이게 정당한 해고인지 판단해 주세요.","expected":"refer_hr"}
+{"id":"L02","type":"legal_personal","question":"제 연차가 며칠 남았는지 알려주세요.","expected":"refer_hr"}
+{"id":"Q21","type":"in_scope","question":"애 낳으면 몇 달 쉬어요?","gold_doc":"복무규정","gold_article":"제20조","keywords":["90일"],"note":"구어체"}
+{"id":"Q22","type":"in_scope","question":"야근하면 저녁 밥값 나와요?","gold_doc":"복리후생규정","gold_article":"제3조","keywords":["1만 원"],"note":"구어체"}
+{"id":"Q23","type":"in_scope","question":"회사 그만두려면 언제까지 말해야 돼요?","gold_doc":"취업규칙","gold_article":"제43조","keywords":["30일 전"],"note":"구어체"}
+{"id":"Q24","type":"in_scope","question":"집에서 일해도 되나요?","gold_doc":"복무규정","gold_article":"제7조","keywords":["주 2일"],"note":"구어체"}
+{"id":"Q25","type":"in_scope","question":"아파서 쉬면 월급 나와요?","gold_doc":"복무규정","gold_article":"제24조","keywords":["유급"],"note":"구어체"}
+{"id":"Q26","type":"in_scope","question":"결혼하면 며칠 쉴 수 있어요?","gold_doc":"복무규정","gold_article":"제19조","keywords":["5일"],"note":"구어체"}
+{"id":"Q27","type":"in_scope","question":"출근 시간을 좀 늦춰도 돼요?","gold_doc":"복무규정","gold_article":"제8조","keywords":["오전 8시","오전 10시"],"note":"구어체"}
+{"id":"Q28","type":"in_scope","question":"쓰고 남은 연차는 돈으로 받나요?","gold_doc":"복무규정","gold_article":"제17조","keywords":["통상임금 1일분"],"note":"구어체"}
+{"id":"F04","type":"followup","history":["재택근무는 일주일에 최대 며칠까지 할 수 있나요?"],"question":"월급은 며칠에 나와요?","gold_doc":"취업규칙","gold_article":"제23조","keywords":["25일"],"note":"주제 전환"}
+{"id":"F05","type":"followup","history":["육아휴직은 언제까지 신청해야 하나요?"],"question":"그건 몇 번으로 나눠 쓸 수 있어요?","gold_doc":"복무규정","gold_article":"제21조","keywords":["2회"],"note":"대명사"}
+{"id":"N04","type":"no_evidence","question":"우리 회사 연봉 테이블 알려줘","expected":"refuse_no_evidence","absent_keywords":["연봉"],"note":"도메인 근접"}
+{"id":"N05","type":"no_evidence","question":"해외 파견 근무하면 수당은 얼마예요?","expected":"refuse_no_evidence","absent_keywords":["해외 파견","파견 수당"],"note":"도메인 근접"}
+{"id":"O03","type":"out_of_scope","history":["재택근무는 일주일에 최대 며칠까지 할 수 있나요?"],"question":"그럼 오늘 점심 뭐 먹을까?","expected":"refuse_out_of_scope","note":"대화 이력이 있어도 범위 밖은 거부"}
